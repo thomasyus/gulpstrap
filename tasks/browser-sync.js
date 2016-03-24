@@ -1,16 +1,16 @@
-var config = require('../../gulpconfig.json');
+"use strict";
+
+var config = require('../package.json').config;
 
 // modules
-var gulp = require(config.nm + 'gulp');
-var gutil = require(config.nm + 'gulp-util');
+var gulp = require('gulp');
+var gutil = require('gulp-util');
 var browserSync = require('browser-sync');
-
-var reload_delay = 500; // wait a sec before all reloads for all gulp tasks to finish
 
 /* checkout more options at http://www.browsersync.io/docs/options */
 
 // Static server
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', () => {
     if (config.enable_browser_sync) {
         console.log('* Browser sync enabled *');
         return browserSync({
@@ -21,12 +21,14 @@ gulp.task('browser-sync', function() {
             }
         });
     }
+    
+    return true;
 });
 
-gulp.task('browser-reload', function() {
-    if (config.enable_browser_sync) {
-    	setTimeout(function() {
-    		browserSync.reload();
-    	}, reload_delay);
-    }
+gulp.task('browser-reload', () => {
+  if (config.enable_browser_sync) {
+    return browserSync.reload();
+  }
+  
+  return true;
 })

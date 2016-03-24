@@ -1,6 +1,0 @@
-{
-    "build_path" : "./dist/",
-    "src_path": "./src/",
-    "nm": "../../node_modules/",
-    "enable_browser_sync": true
-}

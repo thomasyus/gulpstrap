@@ -1,7 +1,7 @@
 gulpstrap
 =========
 
-[Gulp](https://github.com/wearefractal/gulp) config for [bootstrap](http://getbootstrap.com/), [nunjuck](http://jlongster.github.io/nunjucks/) templates, [jquery](http://jquery.com/), [less](http://lesscss.org/) & [browser-sync](http://www.browsersync.io/).
+[Gulp](https://github.com/wearefractal/gulp) config for [bootstrap](http://getbootstrap.com/), [nunjuck](http://jlongster.github.io/nunjucks/) templates, [jquery](http://jquery.com/), [sass](http://sass-lang.org/) & [browser-sync](http://www.browsersync.io/).
 
 Dependencies
 =========

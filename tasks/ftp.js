@@ -1,9 +1,9 @@
 // config
-var config = require('../../gulpconfig.json');
+var config = require('../package.json').config;
 
-var gulp = require(config.nm + 'gulp');
-var gutil = require(config.nm + 'gulp-util');
-var ftp = require(config.nm + 'gulp-ftp');
+var gulp = require('gulp');
+var gutil = require('gulp-util');
+//var ftp = require('gulp-ftp');
 
 var creds = {
         host: 'ftp.domain.com',

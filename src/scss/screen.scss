@@ -1,10 +1,10 @@
-/**
- * Copyright Sentient Interactive, 2014
- *
- */
-@import "_bootstrap.less";
+@import "bootstrap";
 
-/* Custom CSS Starts here */
+/*
+ * This is your main stylesheet. 
+ * Put any custom class overrides, etc. in here.
+ */ 
+ 
 .welcome-template {
     margin-top: 70px;
     margin-bottom: 30px;
@@ -12,7 +12,6 @@
     text-align: center;
 }
 
-/* making an edit */
 .grid-template {
     margin-top: 70px;
     margin-bottom: 30px;
@@ -65,25 +64,8 @@
     }
 }
 
-/*
- *
- * Extra small devices (phones, less than 768px)
- * have no media query since this is the default
- * in Bootstrap (Mobile first)
- *
- */
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
-    @import "breakpoints/small.less";
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
-    @import "breakpoints/medium.less";
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {
-    @import "breakpoints/large.less";
-}
+@include media-breakpoint-down(xs) {  }
+@include media-breakpoint-down(sm) {  }
+@include media-breakpoint-down(md) {  }
+@include media-breakpoint-down(lg) {  }
+@include media-breakpoint-down(xl) {  }
